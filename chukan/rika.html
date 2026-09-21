@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>２学期中間テスト 理科 問題</title>
+<style>
+  :root {
+    --ink-dark: #263238;
+    --ink: #37474f;
+    --bg: #f4f6fb;
+    --card: #ffffff;
+    --accent: #2f8f5f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
+    background: var(--bg);
+    margin: 0;
+    color: #222;
+    line-height: 1.8;
+  }
+  header {
+    background: linear-gradient(135deg, var(--ink-dark), var(--ink));
+    color: white;
+    padding: 28px 16px 30px;
+    text-align: center;
+  }
+  header h1 { margin: 0 0 6px; font-size: 1.35rem; }
+  header p { margin: 0; font-size: 0.9rem; opacity: 0.92; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 20px 16px 40px; }
+  .nav { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; }
+  .nav a, .nav button {
+    font: inherit; font-size: 0.85rem; cursor: pointer;
+    background: var(--card); color: var(--ink-dark); border: 1px solid #cfd8dc;
+    border-radius: 999px; padding: 6px 14px; text-decoration: none;
+  }
+  .note {
+    background: var(--card); border-left: 6px solid var(--accent); border-radius: 10px;
+    padding: 12px 16px; font-size: 0.88rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .note b { font-weight: bold; }
+  .note p { margin: 2px 0; }
+  section.q {
+    background: var(--card); border-radius: 14px; padding: 16px 18px 12px; margin-top: 18px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+  }
+  section.q > h2 {
+    font-size: 1.02rem; margin: 0 0 8px; padding: 6px 10px; background: #e3f1ea;
+    border-radius: 8px; color: #1c5c3c;
+  }
+  .sub { margin: 14px 0 4px; padding-left: 2.6em; text-indent: -2.6em; }
+  .sub .pts { font-weight: bold; }
+  .sub2 { margin-left: 1.2em; }
+  .body { margin: 4px 0 4px 2.6em; }
+  .opts { margin: 2px 0 4px 3.4em; }
+  .opts div { margin: 0; }
+  .ans { text-align: right; margin: 4px 0 8px; }
+  .blank { display: inline-block; min-width: 6em; border-bottom: 1px solid #555; }
+  .blank.s { min-width: 3em; }
+  .blank.l { min-width: 11em; }
+  .blank.xl { min-width: 16em; }
+  .lines { margin: 6px 0 8px 2.6em; }
+  .lines div { height: 2.2em; border-bottom: 1px solid #999; }
+  .label { margin: 4px 0 0 2.6em; }
+  table.t { border-collapse: collapse; margin: 8px auto; font-size: 0.9rem; }
+  table.t th, table.t td { border: 1px solid #555; padding: 4px 10px; text-align: center; }
+  table.t th { background: #f2f2f2; font-weight: normal; }
+  .tscroll { overflow-x: auto; }
+  figure.fig { margin: 8px auto; text-align: center; }
+  figure.fig img { max-width: 100%; height: auto; }
+  figure.fig figcaption { font-size: 0.8rem; color: #444; }
+  .eq { text-align: center; margin: 4px 0; }
+  .end { text-align: center; margin: 22px 0 0; font-size: 0.85rem; color: #666; }
+  @media print {
+    body { background: #fff; }
+    header { background: none; color: #000; padding: 0 0 8px; border-bottom: 2px solid #000; }
+    .nav { display: none; }
+    section.q { box-shadow: none; padding: 0; break-inside: auto; }
+    section.q > h2 { background: #e7e6e6; color: #000; }
+    .note { box-shadow: none; }
+    figure.fig { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>令和8年度 第3学年 ２学期中間テスト　理科</h1>
+  <p>時間 50分　／　100点満点</p>
+</header>
+
+<div class="wrap">
+  <div class="nav">
+    <a href="./">← ２学期中間テストへ戻る</a>
+    <button type="button" onclick="window.print()">🖨 印刷する</button>
+  </div>
+
+  <div class="note">
+    <p><b>【注意】</b></p>
+    <p>①答えはすべて紙（またはノート）に書くこと。</p>
+    <p>②「式」の欄がある問題は、答えだけでなく途中の式も書くこと。</p>
+    <p>③100 g の物体にはたらく重力の大きさを1 Nとする。</p>
+    <p>④水1 cm³ の質量は1 gである。水中で、物体が押しのけた水1 cm³ あたりにはたらく浮力は0.01 Nとする。</p>
+    <p>⑤特にことわりがない場合、ばねばかり・滑車・ひもの質量、および摩擦や空気の抵抗は考えないものとする。</p>
+  </div>
+
+  <!-- 大問1 -->
+  <section class="q">
+    <h2>1　水中ではたらく力について、次の問いに答えなさい。（16点）</h2>
+    <p class="body">底面積 20 cm²、高さ 6.0 cm の直方体の物体Xがある。物体Xを空気中でばねばかりにつるすと、目盛りは 1.8 N を示した。図1のように、物体Xの底面を水面と平行にしたまま、水面から底面までの深さを変えながら、ばねばかりの示す値を調べた。表はその結果である。</p>
+    <figure class="fig"><img src="img-rika/fig1.png" width="215" alt="図1　ばねばかりにつるした物体Xを水に入れるようす"><figcaption>図1</figcaption></figure>
+    <div class="tscroll"><table class="t">
+      <tr><th>物体の底面の深さ〔cm〕</th><td>0</td><td>2.0</td><td>4.0</td><td>6.0</td><td>8.0</td></tr>
+      <tr><th>ばねばかりの示す値〔N〕</th><td>1.8</td><td>1.4</td><td>1.0</td><td>0.6</td><td>0.6</td></tr>
+    </table></div>
+    <p class="sub">(1)　水圧について述べた文として正しいものを、次のア〜エから1つ選び、記号で答えなさい。<span class="pts">（2点）</span></p>
+    <div class="opts">
+      <div>ア　水圧は、水の深さに関係なく、どこでも同じ大きさである。</div>
+      <div>イ　水圧は、深いほど大きく、水中の物体にあらゆる向きからはたらく。</div>
+      <div>ウ　水圧は、水面に向かって上向きにだけはたらく。</div>
+      <div>エ　水圧は、深いほど小さくなる。</div>
+    </div>
+    <p class="ans">答（<span class="blank s"></span>）</p>
+    <p class="sub">(2)　ダムの壁は、下の部分ほど厚くつくられている。その理由を、水圧の性質にふれて簡単に書きなさい。<span class="pts">（3点）</span></p>
+    <div class="lines"><div></div><div></div></div>
+    <p class="sub">(3)　物体Xの底面の深さが 4.0 cm のとき、物体Xにはたらく浮力の大きさは何Nですか。<span class="pts">（2点）</span></p>
+    <p class="ans">答（<span class="blank"></span>）N</p>
+    <p class="sub">(4)　物体Xの底面の深さが 6.0 cm 以上になると、ばねばかりの示す値が変化しなくなった。その理由を「体積」という語を使って書きなさい。<span class="pts">（3点）</span></p>
+    <div class="lines"><div></div><div></div></div>
+    <p class="sub">(5)　水中に完全に沈んだ物体には、上向きの力である浮力がはたらく。浮力が生じる理由を、物体の上面と下面にはたらく水圧のちがいにふれて書きなさい。<span class="pts">（3点）</span></p>
+    <div class="lines"><div></div><div></div></div>
+    <p class="sub">(6)　物体Xを完全に水中に沈めて、ばねばかりからはずし静かに手をはなすと、物体Xは浮きますか、沈みますか。「浮く」「沈む」のどちらかで答え、その理由を、浮力と重力の大きさを用いて説明しなさい。<span class="pts">（3点）</span></p>
+    <p class="ans">答（<span class="blank s"></span>）</p>
+    <div class="lines"><div></div><div></div></div>
+  </section>
+
+  <!-- 大問2 -->
+  <section class="q">
+    <h2>2　仕事とエネルギーについて、次の問いに答えなさい。（18点）</h2>
+    <p class="body">質量 2.0 kg の物体Pがある。</p>
+    <p class="sub">(1)　次の文の（　①　）、（　②　）にあてはまる語を書きなさい。<span class="pts">（各1点）</span></p>
+    <p class="body">仕事の大きさ〔J〕＝物体に加えた（　①　）の大きさ〔N〕×（　①　）の向きに動いた（　②　）〔m〕</p>
+    <p class="ans">①（<span class="blank"></span>）　②（<span class="blank"></span>）</p>
+    <p class="sub">(2)　物体Pを床から真上に 1.5 m の高さまで、一定の速さで持ち上げた。手が物体Pにした仕事は何Jですか。<span class="pts">（2点）</span></p>
+    <p class="ans">答（<span class="blank"></span>）J</p>
+    <p class="sub">(3)　次のア〜エのうち、力を加えているが、その力が物体に対して仕事をしていないものを1つ選び、記号で答えなさい。ただし、イでは体の上下の動きは考えないものとする。<span class="pts">（2点）</span></p>
+    <div class="opts">
+      <div>ア　床にある荷物を持ち上げて、棚にのせる。</div>
+      <div>イ　荷物を持ったまま、水平な廊下を一定の速さで歩く。</div>
+      <div>ウ　床の上の台車を、水平に押して動かす。</div>
+      <div>エ　荷物を持って、階段を上る。</div>
+    </div>
+    <p class="ans">答（<span class="blank s"></span>）</p>
+    <p class="body">図2のように、動滑車と定滑車を使い、物体Pを 1.0 m 引き上げた。</p>
+    <figure class="fig"><img src="img-rika/fig2.png" width="190" alt="図2　動滑車と定滑車を使って物体Pを引き上げるようす"><figcaption>図2</figcaption></figure>
+    <p class="sub">(4)　ひもを引く力の大きさは何Nですか。また、ひもを引いた距離は何mですか。<span class="pts">（各2点）</span></p>
+    <p class="ans">力の大きさ（<span class="blank"></span>）N　距離（<span class="blank"></span>）m</p>
+    <p class="sub">(5)　(4)の力で、物体Pを 1.0 m 引き上げるのに 5.0 秒かかった。ひもを引いた人の仕事率は何Wですか。<span class="pts">（2点）</span></p>
+    <p class="ans">答（<span class="blank"></span>）W</p>
+    <p class="sub">(6)　(4)で、滑車を使っても使わなくても、仕事の大きさは同じになる。「仕事の原理」が成り立つことを、物体Pを滑車を使わずに 1.0 m 持ち上げた場合の仕事と、滑車を使ったときにひもを引いた力がした仕事の大きさを比べて、説明しなさい。<span class="pts">（3点）</span></p>
+    <div class="lines"><div></div><div></div><div></div></div>
+    <p class="body">図3のように、摩擦のない斜面にそって、物体Pを一定の速さで斜面の下から上まで引き上げた。</p>
+    <figure class="fig"><img src="img-rika/fig3.png" width="250" alt="図3　摩擦のない斜面にそって物体Pを引き上げるようす"><figcaption>図3</figcaption></figure>
+    <p class="sub">(7)　物体Pを引く力の大きさは何Nですか。仕事の原理を用いて求めなさい。<span class="pts">（3点）</span></p>
+    <p class="label">式</p>
+    <div class="lines"><div></div><div></div></div>
+    <p class="ans">答（<span class="blank"></span>）N</p>
+  </section>
+
+  <!-- 大問3 -->
+  <section class="q">
+    <h2>3　力学的エネルギーについて、次の問いに答えなさい。（18点）</h2>
+    <p class="body">図4のように、糸におもりをつけて振り子をつくった。おもりを点Aで静かにはなすと、おもりは最下点Bを通り、反対側の点Cまで達した。ただし、(1)〜(3)では、空気の抵抗や糸・支点での摩擦は考えないものとする。</p>
+    <figure class="fig"><img src="img-rika/fig4.png" width="250" alt="図4　振り子。点Aは最下点Bより20 cm高い位置"><figcaption>図4</figcaption></figure>
+    <p class="sub">(1)　高い位置にある物体がもつエネルギーを（　①　）エネルギー、運動している物体がもつエネルギーを（　②　）エネルギーという。（　）にあてはまる語を書きなさい。<span class="pts">（各1点）</span></p>
+    <p class="ans">①（<span class="blank"></span>）　②（<span class="blank"></span>）</p>
+    <p class="sub">(2)　おもりが点Aから点Bへ動く間に、おもりの位置エネルギーと運動エネルギーは、それぞれどうなりますか。「増える」「減る」「変わらない」から選んで書きなさい。<span class="pts">（各1点）</span></p>
+    <p class="ans">位置エネルギー（<span class="blank"></span>）　運動エネルギー（<span class="blank"></span>）</p>
+    <p class="sub">(3)　点Cの高さは、点Aの高さと比べてどうなりますか。「高い」「同じ」「低い」から選び、そうなる理由を「力学的エネルギー」という語を使って書きなさい。<span class="pts">（3点）</span></p>
+    <p class="ans">答（<span class="blank s"></span>）</p>
+    <div class="lines"><div></div><div></div></div>
+    <p class="sub">(4)　実際の振り子は、しだいに振れ幅が小さくなり、やがて止まる。このとき、おもりがもっていた力学的エネルギーは、どのようになったと考えられますか。その原因にもふれて書きなさい。<span class="pts">（3点）</span></p>
+    <div class="lines"><div></div><div></div></div>
+    <p class="body">次に、図5のような装置で、小球を斜面上のいろいろな高さからはなし、水平面上の木片に当てて、木片が動いた距離を調べた。表は、質量 50 g の小球と質量 100 g の小球を用いたときの結果をまとめたものである。ただし、小球は斜面から水平面へなめらかに進み、斜面と水平面の摩擦は考えないものとし、木片と水平面の間の摩擦の大きさは、どの実験でも同じとする。</p>
+    <figure class="fig"><img src="img-rika/fig5.png" width="270" alt="図5　斜面上の小球を水平面上の木片に当てる装置"><figcaption>図5</figcaption></figure>
+    <div class="tscroll"><table class="t">
+      <tr><th>小球の質量〔g〕</th><td>50</td><td>50</td><td>50</td><td>50</td><td>100</td></tr>
+      <tr><th>小球をはなす高さ〔cm〕</th><td>5.0</td><td>10.0</td><td>15.0</td><td>20.0</td><td>10.0</td></tr>
+      <tr><th>木片が動いた距離〔cm〕</th><td>2.0</td><td>4.0</td><td>6.0</td><td>8.0</td><td>8.0</td></tr>
+    </table></div>
+    <p class="sub">(5)　質量 50 g の小球について、小球をはなす高さと木片が動いた距離には、どのような関係がありますか。<span class="pts">（2点）</span></p>
+    <p class="ans">（<span class="blank xl"></span>）</p>
+    <p class="sub">(6)　質量 100 g の小球を、高さ 15.0 cm からはなしたとき、木片が動く距離は何cmになると考えられますか。表をもとに、考え方も書いて答えなさい。<span class="pts">（3点）</span></p>
+    <p class="label">考え方</p>
+    <div class="lines"><div></div><div></div></div>
+    <p class="ans">答（<span class="blank"></span>）cm</p>
+    <p class="sub">(7)　斜面の傾きだけを大きくして、質量 50 g の小球を高さ 10.0 cm からはなしたとき、木片が動く距離は、傾きを変える前（4.0 cm）と比べてどうなりますか。「大きくなる」「小さくなる」「変わらない」から選び、そうなる理由を書きなさい。<span class="pts">（3点）</span></p>
+    <p class="ans">答（<span class="blank"></span>）</p>
+    <div class="lines"><div></div><div></div></div>
+  </section>
+
+  <!-- 大問4 -->
+  <section class="q">
+    <h2>4　水溶液と電流について、次の問いに答えなさい。（14点）</h2>
+    <p class="body">次のA〜Eの水溶液を用意し、電極、電源装置、電流計をつないだ装置を使って、それぞれの水溶液に電流が流れるかどうかを調べた。1つの水溶液を調べ終わるごとに、電極を蒸留水で洗ってから次の水溶液を調べた。</p>
+    <p class="eq">A：砂糖水　　B：食塩水　　C：塩酸　　D：エタノール水溶液　　E：水酸化ナトリウム水溶液</p>
+    <p class="sub">(1)　水にとかしたとき、電流が流れる物質を①（　　　　）、電流が流れない物質を②（　　　　）という。①、②にあてはまる語を書きなさい。<span class="pts">（各1点）</span></p>
+    <p class="ans">①（<span class="blank"></span>）　②（<span class="blank"></span>）</p>
+    <p class="sub">(2)　電流が流れなかった水溶液を、A〜Eからすべて選び、記号で答えなさい。<span class="pts">（2点）</span></p>
+    <p class="ans">答（<span class="blank l"></span>）</p>
+    <p class="sub">(3)　水溶液を調べ終わるごとに、電極を蒸留水で洗うのはなぜですか。<span class="pts">（2点）</span></p>
+    <div class="lines"><div></div></div>
+    <p class="sub">(4)　純粋な水（蒸留水）には電流がほとんど流れないが、食塩をとかすと電流が流れるようになる。その理由を、「イオン」という語を使って書きなさい。<span class="pts">（3点）</span></p>
+    <div class="lines"><div></div><div></div></div>
+    <p class="sub">(5)　塩化ナトリウムが水にとけて、陽イオンと陰イオンに分かれるようすを、化学式を用いた式で表しなさい。<span class="pts">（2点）</span></p>
+    <p class="ans">（<span class="blank xl"></span>）</p>
+    <p class="sub">(6)　Bの食塩水の濃度を大きくして、同じ電圧を加えたとき、流れる電流の大きさは、濃度を大きくする前と比べてどうなりますか。「大きくなる」「小さくなる」「変わらない」から選び、その理由を「イオン」という語を使って書きなさい。<span class="pts">（3点）</span></p>
+    <p class="ans">答（<span class="blank"></span>）</p>
+    <div class="lines"><div></div><div></div></div>
+  </section>
+
+  <!-- 大問5 -->
+  <section class="q">
+    <h2>5　水溶液とイオンについて、次の問いに答えなさい。（18点）</h2>
+    <p class="body">図6のように、炭素棒を電極としてうすい塩化銅水溶液に入れ、電流を流した。電極Xは電源装置の－極に、電極Yは＋極につないである。しばらくすると、一方の電極の表面に赤褐色の物質が付着し、もう一方の電極からは気体が発生した。</p>
+    <figure class="fig"><img src="img-rika/fig6.png" width="210" alt="図6　塩化銅水溶液の電気分解の装置"><figcaption>図6</figcaption></figure>
+    <p class="sub">(1)　陰極は、電極X、Yのどちらですか。<span class="pts">（2点）</span></p>
+    <p class="ans">答（<span class="blank s"></span>）</p>
+    <p class="sub">(2)　赤褐色の物質を薬さじの裏でこすると、光沢が出た。この物質の名称を書きなさい。また、金属に共通するこの光沢の性質を何といいますか。<span class="pts">（各2点）</span></p>
+    <p class="ans">名称（<span class="blank"></span>）　性質（<span class="blank"></span>）</p>
+    <p class="sub">(3)　気体が発生した電極付近では、プールの消毒のようなにおいがした。発生した気体の名称を書きなさい。また、この気体を確かめる方法を、その気体の性質にふれて簡単に書きなさい。<span class="pts">（3点）</span></p>
+    <p class="ans">気体の名称（<span class="blank"></span>）</p>
+    <div class="lines"><div></div><div></div></div>
+    <p class="sub">(4)　この実験で塩化銅が分解されるようすを、化学式を用いた式で表しなさい。<span class="pts">（3点）</span></p>
+    <p class="ans">（<span class="blank xl"></span>）</p>
+    <p class="sub">(5)　電流を流し続けると、水溶液の青色がうすくなった。その理由を、イオンにふれて書きなさい。<span class="pts">（3点）</span></p>
+    <div class="lines"><div></div><div></div></div>
+    <p class="sub">(6)　次に、塩酸を電気分解した。陰極側と陽極側で集まった気体の体積を比べると、陰極側では 8 mL、陽極側では約 5 mL であった。塩酸の電気分解では、陰極と陽極から同じ体積の気体が発生するにもかかわらず、陽極側で集まった気体の体積が少なかった理由を、気体の名称を用いて書きなさい。<span class="pts">（3点）</span></p>
+    <div class="lines"><div></div><div></div></div>
+  </section>
+
+  <!-- 大問6 -->
+  <section class="q">
+    <h2>6　イオンと原子のなり立ちについて、次の問いに答えなさい。（16点）</h2>
+    <figure class="fig"><img src="img-rika/fig7.png" width="200" alt="図7　原子のモデル"><figcaption>図7　原子のモデル</figcaption></figure>
+    <p class="sub">(1)　図7の原子のモデルについて、①の粒子は＋の電気をもち、②の粒子は電気をもたない。①、②の粒子の名称を書きなさい。また、③の粒子がもつ電気は＋、－のどちらですか。<span class="pts">（各1点）</span></p>
+    <p class="ans">①（<span class="blank"></span>）　②（<span class="blank"></span>）　③（<span class="blank"></span>）</p>
+    <p class="sub">(2)　原子全体は、ふつう電気を帯びていない。その理由を、陽子と電子の数と電気の量にふれて書きなさい。<span class="pts">（2点）</span></p>
+    <div class="lines"><div></div><div></div></div>
+    <p class="body">次の表は、粒子A〜Dがもつ陽子・中性子・電子の数を表したものである。A〜Dは、原子またはイオンのいずれかである。</p>
+    <table class="t">
+      <tr><th></th><th>A</th><th>B</th><th>C</th><th>D</th></tr>
+      <tr><th>陽子の数</th><td>9</td><td>11</td><td>12</td><td>12</td></tr>
+      <tr><th>中性子の数</th><td>10</td><td>12</td><td>12</td><td>13</td></tr>
+      <tr><th>電子の数</th><td>10</td><td>10</td><td>12</td><td>12</td></tr>
+    </table>
+    <p class="sub">(3)　A〜Dのうち、陽イオンであるものと、陰イオンであるものを、それぞれ1つずつ記号で答えなさい。<span class="pts">（各1点）</span></p>
+    <p class="ans">陽イオン（<span class="blank s"></span>）　陰イオン（<span class="blank s"></span>）</p>
+    <p class="sub">(4)　次のイオンを、イオンの化学式で表しなさい。<span class="pts">（各1点）</span></p>
+    <p class="ans">ナトリウムイオン（<span class="blank s"></span>）　塩化物イオン（<span class="blank s"></span>）　銅イオン（<span class="blank s"></span>）</p>
+    <p class="sub">(5)　CとDは、同じ元素の原子である。その理由を、表からわかることを使って書きなさい。また、CとDのような関係にある原子を、たがいに何といいますか。<span class="pts">（各1点）</span></p>
+    <p class="label">理由</p>
+    <div class="lines"><div></div></div>
+    <p class="ans">用語（<span class="blank l"></span>）</p>
+    <p class="sub">(6)　ある原子Xが電子を3個失って、陽イオンになった。このイオンがもつ電子の数は 10 個であった。次の問いに答えなさい。ただし、元素の陽子の数と元素記号は、次の表のとおりとする。</p>
+    <table class="t">
+      <tr><th>陽子の数</th><td>11</td><td>12</td><td>13</td><td>14</td></tr>
+      <tr><th>元素記号</th><td>Na</td><td>Mg</td><td>Al</td><td>Si</td></tr>
+    </table>
+    <p class="sub sub2">(a)　原子Xがもつ陽子の数は何個ですか。考え方も書いて答えなさい。<span class="pts">（2点）</span></p>
+    <p class="label">考え方</p>
+    <div class="lines"><div></div></div>
+    <p class="ans">答（<span class="blank"></span>）個</p>
+    <p class="sub sub2">(b)　この陽イオンを、イオンの化学式で表しなさい。<span class="pts">（2点）</span></p>
+    <p class="ans">答（<span class="blank"></span>）</p>
+  </section>
+
+  <p class="end">― 終 ―</p>
+</div>
+
+</body>
+</html>
