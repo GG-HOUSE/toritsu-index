@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>２学期中間テスト 数学 解答・解説</title>
+<style>
+  :root { --ink-dark:#263238; --ink:#37474f; --bg:#f4f6fb; --card:#fff; --accent:#2f5fa8; }
+  * { box-sizing: border-box; }
+  body { font-family:"Hiragino Sans","Noto Sans JP","Yu Gothic",sans-serif; background:var(--bg); margin:0; color:#222; line-height:1.75; }
+  header { background:linear-gradient(135deg,var(--ink-dark),var(--ink)); color:#fff; padding:28px 16px 30px; text-align:center; }
+  header h1 { margin:0 0 6px; font-size:1.3rem; }
+  header p { margin:0; font-size:.9rem; opacity:.92; }
+  .wrap { max-width:760px; margin:0 auto; padding:20px 16px 40px; }
+  .nav { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:16px; }
+  .nav a, .nav button { font:inherit; font-size:.85rem; cursor:pointer; background:var(--card); color:var(--ink-dark); border:1px solid #cfd8dc; border-radius:999px; padding:6px 14px; text-decoration:none; }
+  .note { background:var(--card); border-left:6px solid var(--accent); border-radius:10px; padding:12px 16px; font-size:.88rem; box-shadow:0 2px 8px rgba(0,0,0,.06); }
+  .note p { margin:2px 0; }
+  .jump { display:flex; gap:8px; flex-wrap:wrap; margin:14px 0 0; }
+  .jump a { font-size:.85rem; text-decoration:none; color:var(--ink-dark); background:var(--card); border:1px solid #cfd8dc; border-radius:8px; padding:4px 12px; }
+  section.q { background:var(--card); border-radius:14px; padding:14px 16px 8px; margin-top:18px; box-shadow:0 2px 10px rgba(0,0,0,.07); }
+  section.q > h2 { font-size:1.02rem; margin:0 0 10px; padding:6px 10px; background:#e3ebf6; border-radius:8px; color:#1a3d6d; }
+  .item { border-top:1px solid #e3e7ea; padding:10px 0 12px; }
+  .item:first-of-type { border-top:none; }
+  .head { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:6px; }
+  .no { font-weight:bold; font-size:1rem; min-width:3.4em; }
+  .pt { font-size:.8rem; background:#eceff1; border-radius:999px; padding:1px 10px; }
+  .lv { font-size:.75rem; border-radius:999px; padding:1px 10px; }
+  .lv.k { background:#e2efda; } .lv.h { background:#fff2cc; } .lv.o { background:#fce4d6; }
+  .ans { background:#f1f8f3; border:1px solid #b7d8c0; border-radius:8px; padding:6px 12px; margin:4px 0; }
+  .ans div { margin:1px 0; }
+  .ans .lab { font-size:.75rem; color:#2e7d32; font-weight:bold; margin-right:.5em; }
+  .exp { font-size:.9rem; margin:6px 0 0; }
+  .exp b { color:#7a1f3d; }
+  .pit { font-size:.83rem; color:#6d4c00; background:#fff8e1; border-radius:8px; padding:4px 10px; margin:6px 0 0; }
+  h3.tips { font-size:1.02rem; margin:26px 0 8px; }
+  ul.tips { background:var(--card); border-radius:14px; box-shadow:0 2px 10px rgba(0,0,0,.07); padding:14px 18px 14px 34px; font-size:.9rem; margin:0; }
+  ul.tips li { margin:6px 0; }
+  table.sum { border-collapse:collapse; margin:10px auto 0; font-size:.88rem; background:var(--card); }
+  table.sum th, table.sum td { border:1px solid #90a4ae; padding:4px 12px; text-align:center; }
+  table.sum th { background:#eceff1; font-weight:normal; }
+  .end { text-align:center; margin:22px 0 0; font-size:.85rem; color:#666; }
+  @media print { body{background:#fff;} header{background:none;color:#000;padding:0 0 8px;border-bottom:2px solid #000;} .nav,.jump{display:none;} section.q,ul.tips,.note{box-shadow:none;} .item{break-inside:avoid;} }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>令和8年度 第3学年 ２学期中間テスト　数学　解答・解説</h1>
+  <p>100点満点</p>
+</header>
+
+<div class="wrap">
+  <div class="nav">
+    <a href="./">← 解答・解説のメニューへ</a>
+    <a href="../sugaku.html">問題を見る</a>
+    <button type="button" onclick="window.print()">🖨 印刷する</button>
+  </div>
+
+  <div class="note">
+    <p>数学の答えと、考え方の解説です。計算問題は、式と考え方も確かめましょう。</p>
+    <p>記述問題の「（例）」は模範解答です。<b>【採点基準】</b>を満たしていれば、書き方がちがっても正解になります。</p>
+    <p>「基礎・標準・応用」は問題の難しさの目安です。まちがえた問題は、解説を読んでからもう一度解いてみましょう。</p>
+  </div>
+  <div class="jump"><a href="#q1">大問1</a><a href="#q2">大問2</a><a href="#q3">大問3</a><a href="#q4">大問4</a><a href="#q5">大問5</a><a href="#q6">大問6</a><a href="#q7">大問7</a></div>
+
+  <section class="q" id="q1">
+    <h2>大問1　二次方程式を解く（20点）</h2>
+    <div class="item">
+      <div class="head"><span class="no">1(1)</span><span class="pt">4点</span><span class="lv k">基礎</span></div>
+      <div class="ans"><span class="lab">答え</span><div>x＝2, 3</div></div>
+      <p class="exp">左辺を因数分解して (x−2)(x−3)＝0。x−2＝0 または x−3＝0 より x＝2, 3。（一方だけ正しい場合は2点）</p>
+      <p class="pit">⚠ まちがえやすい点：解の符号を逆にして x＝−2, −3 とする。</p>
+    </div>
+    <div class="item">
+      <div class="head"><span class="no">1(2)</span><span class="pt">4点</span><span class="lv k">基礎</span></div>
+      <div class="ans"><span class="lab">答え</span><div>x＝4±√5</div></div>
+      <p class="exp">x−4 をひとまとまりと考えて、平方根の考えを使う。x−4＝±√5 より x＝4±√5。（一方だけ正しい場合は2点）</p>
+      <p class="pit">⚠ まちがえやすい点：4 を移項し忘れて x＝±√5 とする。±をつけ忘れて解が１つになる。</p>
+    </div>
+    <div class="item">
+      <div class="head"><span class="no">1(3)</span><span class="pt">4点</span><span class="lv k">基礎</span></div>
+      <div class="ans"><span class="lab">答え</span><div>x＝(−5±√13)/2</div></div>
+      <p class="exp">a＝1, b＝5, c＝3 を解の公式に代入する。x＝{−5±√(5²−4×1×3)}÷(2×1)＝(−5±√13)/2。（代入が正しく、計算ミスだけの場合は2点）</p>
+      <p class="pit">⚠ まちがえやすい点：−b の符号や b²−4ac の計算を間違える。分母の 2a をかけ忘れる。</p>
+    </div>
+    <div class="item">
+      <div class="head"><span class="no">1(4)</span><span class="pt">4点</span><span class="lv k">基礎</span></div>
+      <div class="ans"><span class="lab">答え</span><div>x＝3</div></div>
+      <p class="exp">右辺を移項して x²−6x+9＝0。(x−3)²＝0 より x＝3（重解。解は１つだけ）。「x＝3, 3」と書いても正解。</p>
+      <p class="pit">⚠ まちがえやすい点：移項せずに解こうとする。解を x＝3, −3 とする。</p>
+    </div>
+    <div class="item">
+      <div class="head"><span class="no">1(5)</span><span class="pt">4点</span><span class="lv h">標準</span></div>
+      <div class="ans"><span class="lab">答え</span><div>x＝−6, 3</div></div>
+      <p class="exp">左辺を展開して整理する。x²+3x−10＝8 より x²+3x−18＝0。(x+6)(x−3)＝0 より x＝−6, 3。（一方だけ正しい場合は2点）</p>
+      <p class="pit">⚠ まちがえやすい点：「x−2＝8 または x+5＝8」として解く。この考え方は、右辺が 0 のときしか使えない。</p>
+    </div>
+  </section>
+
+  <section class="q" id="q2">
+    <h2>大問2　二次方程式とその解（10点）</h2>
+    <div class="item">
+      <div class="head"><span class="no">2(1)</span><span class="pt">3点</span><span class="lv k">基礎</span></div>
+      <div class="ans"><span class="lab">答え</span><div>a＝4</div></div>
+      <p class="exp">x＝2 が解なので、方程式に代入すると成り立つ。2²+2a−12＝0 より 4+2a−12＝0、2a＝8、a＝4。</p>
+      <p class="pit">⚠ まちがえやすい点：「解を代入する」という解の意味が使えない。</p>
+    </div>
+    <div class="item">
+      <div class="head"><span class="no">2(2)</span><span class="pt">3点</span><span class="lv h">標準</span></div>
+      <div class="ans"><span class="lab">答え</span><div>x＝−6</div></div>
+      <p class="exp">a＝4 より x²+4x−12＝0。(x+6)(x−2)＝0 より x＝−6, 2。もう１つの解は x＝−6。（別解：２つの解の積が −12 なので、−12÷2＝−6）</p>
+      <p class="pit">⚠ まちがえやすい点：a を求めても、もう１つの解を出すときに方程式を解かない。</p>
+    </div>
+    <div class="item">
+      <div class="head"><span class="no">2(3)</span><span class="pt">4点</span><span class="lv o">応用</span></div>
+      <div class="ans"><span class="lab">答え</span><div>正しい解：x＝0, 3</div><div>（例）両辺を x でわっているが、x＝0 のときは 0 でわることになり、0 でわることはできない。そのため、解の x＝0 が求められていない。</div></div>
+      <p class="exp"><b>【採点基準】</b>誤りの説明…2点（「0でわってはいけない」「x＝0 も解になる」のどちらかが書けていればよい）／正しい解 x＝0, 3…2点（一方だけは1点）。x²−3x＝0 として x(x−3)＝0 と解く。</p>
+      <p class="pit">⚠ まちがえやすい点：x でわったことは指摘できるが、0 でわれない理由を説明できない。</p>
+    </div>
+  </section>
+
+  <section class="q" id="q3">
+    <h2>大問3　二次方程式の利用（14点）</h2>
+    <div class="item">
+      <div class="head"><span class="no">3(1)</span><span class="pt">6点</span><span class="lv h">標準</span></div>
+      <div class="ans"><span class="lab">答え</span><div>5 と 6</div><div>式：x²+(x+1)²＝61</div></div>
+      <p class="exp"><b>【採点基準】</b>方程式…2点／解く（x＝5, −6）…2点／解の吟味と答え…2点。整理すると x²+x−30＝0、(x+6)(x−5)＝0 より x＝−6, 5。x は正の整数なので x＝5。5²+6²＝25+36＝61 で問題に合う。</p>
+      <p class="pit">⚠ まちがえやすい点：連続する整数を x, x+2 とおく。x＝−6 も答えにしてしまう。</p>
+    </div>
+    <div class="item">
+      <div class="head"><span class="no">3(2)</span><span class="pt">8点</span><span class="lv o">応用</span></div>
+      <div class="ans"><span class="lab">答え</span><div>2 m</div><div>式：(12−x)(8−x)＝60</div></div>
+      <p class="exp"><b>【採点基準】</b>方程式…4点／解く（x＝2, 18）…2点／解の吟味と答え…2点。道を端に寄せると、花だんは縦(8−x) m、横(12−x) m の長方形になる。(12−x)(8−x)＝60 → x²−20x+36＝0 → (x−2)(x−18)＝0 → x＝2, 18。道の幅は 8 m より短いので x＝18 は問題に合わない。（別解：道の面積が 12×8−60＝36 m² なので 12x+8x−x²＝36）</p>
+      <p class="pit">⚠ まちがえやすい点：x＝18 も答えにしてしまう。花だんの面積の式が立てられない。</p>
+    </div>
+  </section>
+
+  <section class="q" id="q4">
+    <h2>大問4　関数 y=ax² の基本（15点）</h2>
+    <div class="item">
+      <div class="head"><span class="no">4(1)</span><span class="pt">3点</span><span class="lv k">基礎</span></div>
+      <div class="ans"><span class="lab">答え</span><div>y＝−2x²</div></div>
+      <p class="exp">y＝ax² に x＝3, y＝−18 を代入すると −18＝a×3²＝9a より a＝−2。</p>
+      <p class="pit">⚠ まちがえやすい点：3² を 6 としてしまう。</p>
+    </div>
+    <div class="item">
+      <div class="head"><span class="no">4(2)</span><span class="pt">3点</span><span class="lv k">基礎</span></div>
+      <div class="ans"><span class="lab">答え</span><div>−3</div></div>
+      <p class="exp">x＝−2 のとき y＝12、x＝1 のとき y＝3。変化の割合＝(yの増加量)÷(xの増加量)＝(3−12)÷{1−(−2)}＝−9÷3＝−3。（別解：a(p+q)＝3×(−2+1)＝−3）</p>
+      <p class="pit">⚠ まちがえやすい点：x が負の数のとき、符号や引き算の順序を間違える。</p>
+    </div>
+    <div class="item">
+      <div class="head"><span class="no">4(3)</span><span class="pt">4点</span><span class="lv h">標準</span></div>
+      <div class="ans"><span class="lab">答え</span><div>0≦y≦9/2</div></div>
+      <p class="exp">x＝−2 のとき y＝2、x＝3 のとき y＝9/2、x＝0 のとき y＝0（最小値）。よって 0≦y≦9/2。（最大値だけ、または最小値だけ正しいときは2点）</p>
+      <p class="pit">⚠ まちがえやすい点：両はしの値だけで 2≦y≦9/2 とする（x＝0 をふくむときの最小値は 0）。</p>
+    </div>
+    <div class="item">
+      <div class="head"><span class="no">4(4)</span><span class="pt">2点</span><span class="lv k">基礎</span></div>
+      <div class="ans"><span class="lab">答え</span><div>イ</div></div>
+      <p class="exp">下に開くのは、a が負の ア・イ・ウ。この中で |a| が最も大きいのは イ（a＝−2）。|a| が大きいほど、グラフの開き方は小さくなる。エ は a＝3 で上に開く。</p>
+      <p class="pit">⚠ まちがえやすい点：|a| の大きさで判断できず、エ（a＝3）を選ぶ。</p>
+    </div>
+    <div class="item">
+      <div class="head"><span class="no">4(5)</span><span class="pt">3点</span><span class="lv h">標準</span></div>
+      <div class="ans"><span class="lab">答え</span><div>a＝−2</div></div>
+      <p class="exp">y の最大値が 0 なので、グラフは下に開く（a＜0）。−1≦x≦2 で y が最小になるのは、|x| が最大の x＝2 のとき。a×2²＝−8 より a＝−2。</p>
+      <p class="pit">⚠ まちがえやすい点：a の符号が判断できない。x＝−1 の値を使ってしまう。</p>
+    </div>
+  </section>
+
+  <section class="q" id="q5">
+    <h2>大問5　放物線と直線（18点）</h2>
+    <div class="item">
+      <div class="head"><span class="no">5(1)</span><span class="pt">4点</span><span class="lv k">基礎</span></div>
+      <div class="ans"><span class="lab">答え</span><div>A(−2, 2)</div><div>B(4, 8)</div></div>
+      <p class="exp">y＝½x² に代入する。A：y＝½×(−2)²＝2、B：y＝½×4²＝8。（A・B 各2点）</p>
+      <p class="pit">⚠ まちがえやすい点：(−2)² を −4 と計算する。</p>
+    </div>
+    <div class="item">
+      <div class="head"><span class="no">5(2)</span><span class="pt">4点</span><span class="lv h">標準</span></div>
+      <div class="ans"><span class="lab">答え</span><div>y＝x+4</div></div>
+      <p class="exp">傾き＝(8−2)÷{4−(−2)}＝1。y＝x+b に A(−2, 2) を代入すると 2＝−2+b より b＝4。</p>
+      <p class="pit">⚠ まちがえやすい点：傾きを求めるときの引き算の順序を間違える。</p>
+    </div>
+    <div class="item">
+      <div class="head"><span class="no">5(3)</span><span class="pt">5点</span><span class="lv h">標準</span></div>
+      <div class="ans"><span class="lab">答え</span><div>12 cm²</div></div>
+      <p class="exp"><b>【採点基準】</b>C(0, 4) を求める…2点／面積の式…2点／答えと単位…1点。直線 AB と y 軸の交点を C とすると C(0, 4)。△OAB＝△OAC＋△OBC＝½×4×2＋½×4×4＝4＋8＝12。</p>
+      <p class="pit">⚠ まちがえやすい点：底辺と高さを決められず、面積が出せない。</p>
+    </div>
+    <div class="item">
+      <div class="head"><span class="no">5(4)</span><span class="pt">5点</span><span class="lv o">応用</span></div>
+      <div class="ans"><span class="lab">答え</span><div>y＝½x+3</div></div>
+      <p class="exp"><b>【採点基準】</b>辺 OB の中点 M(2, 4) を求める…2点／直線の式…3点。点 A を通って △OAB の面積を２等分する直線は、向かい合う辺 OB の中点 M を通る（△OAM と △MAB は、底辺 OM＝MB で高さが同じ）。M(2, 4)。A(−2, 2)、M(2, 4) を通るので、傾き＝(4−2)÷(2+2)＝½。y＝½x+b に A を代入して 2＝−1+b より b＝3。</p>
+      <p class="pit">⚠ まちがえやすい点：「ABの中点」や「傾きの半分」を使ってしまう。</p>
+    </div>
+  </section>
+
+  <section class="q" id="q6">
+    <h2>大問6　関数 y=ax² の利用（13点）</h2>
+    <div class="item">
+      <div class="head"><span class="no">6(1)</span><span class="pt">3点</span><span class="lv k">基礎</span></div>
+      <div class="ans"><span class="lab">答え</span><div>18 m</div></div>
+      <p class="exp">y＝2x² に x＝3 を代入して y＝2×3²＝18。</p>
+      <p class="pit">⚠ まちがえやすい点：(2×3)²＝36 としてしまう。</p>
+    </div>
+    <div class="item">
+      <div class="head"><span class="no">6(2)</span><span class="pt">4点</span><span class="lv h">標準</span></div>
+      <div class="ans"><span class="lab">答え</span><div>毎秒 14 m</div></div>
+      <p class="exp"><b>【採点基準】</b>y の値（8, 50）…2点／式と答え…2点。x＝2 のとき y＝8、x＝5 のとき y＝50。平均の速さ＝(50−8)÷(5−2)＝14。（別解：a(p+q)＝2×(2+5)＝14）</p>
+      <p class="pit">⚠ まちがえやすい点：(5−2) でわらない。</p>
+    </div>
+    <div class="item">
+      <div class="head"><span class="no">6(3)</span><span class="pt">3点</span><span class="lv h">標準</span></div>
+      <div class="ans"><span class="lab">答え</span><div>4 秒</div></div>
+      <p class="exp"><b>【採点基準】</b>式…1点／解…1点／吟味と答え…1点。y＝32 を代入して 2x²＝32、x²＝16、x＝±4。x＞0 なので x＝4。</p>
+      <p class="pit">⚠ まちがえやすい点：x＝−4 も答えにしてしまう。</p>
+    </div>
+    <div class="item">
+      <div class="head"><span class="no">6(4)</span><span class="pt">3点</span><span class="lv o">応用</span></div>
+      <div class="ans"><span class="lab">答え</span><div>4 倍</div><div>（例）時間が x から 2x になると、距離は y＝2×(2x)²＝8x²＝4×2x² となり、もとの距離 2x² の 4 倍になる。</div></div>
+      <p class="exp"><b>【採点基準】</b>「4倍」…1点／式を使った理由…2点。「2倍」は、比例と混同している。</p>
+      <p class="pit">⚠ まちがえやすい点：「時間が2倍なら、距離も2倍」と考える。</p>
+    </div>
+  </section>
+
+  <section class="q" id="q7">
+    <h2>大問7　いろいろな関数（10点）</h2>
+    <div class="item">
+      <div class="head"><span class="no">7(1)</span><span class="pt">3点</span><span class="lv k">基礎</span></div>
+      <div class="ans"><span class="lab">答え</span><div>400 円</div></div>
+      <p class="exp">45 分は「30 分をこえて 60 分まで」にあてはまるので、400 円。</p>
+      <p class="pit">⚠ まちがえやすい点：比例のように考えて 300 円とする。</p>
+    </div>
+    <div class="item">
+      <div class="head"><span class="no">7(2)</span><span class="pt">3点</span><span class="lv k">基礎</span></div>
+      <div class="ans"><span class="lab">答え</span><div>60＜x≦90</div></div>
+      <p class="exp">600 円になるのは「60 分をこえて 90 分まで」。60＜x≦90 と表す。（60≦x≦90 などは1点）</p>
+      <p class="pit">⚠ まちがえやすい点：等号の位置を間違える。</p>
+    </div>
+    <div class="item">
+      <div class="head"><span class="no">7(3)</span><span class="pt">4点</span><span class="lv h">標準</span></div>
+      <div class="ans"><span class="lab">答え</span><div>0＜x≦30 で y＝200、30＜x≦60 で y＝400、60＜x≦90 で y＝600 の、３本の横線をかく。</div><div>各線の左はしは ○、右はしは ● にする。</div></div>
+      <p class="exp"><b>【採点基準】</b>３本の線の位置…各1点／端の点の ●○ がすべて正しい…1点。</p>
+      <p class="pit">⚠ まちがえやすい点：●と○の使い分けを間違える。x＝0 の点を ● にする。</p>
+    </div>
+  </section>
+
+  <h3 class="tips">このテストで特にまちがえやすいポイント</h3>
+  <ul class="tips">
+    <li>大問4(3)：変域に x＝0 をふくむのに、両はしの値だけで y の変域を決めてしまう（0≦y≦9/2 を 2≦y≦9/2 とする）。</li>
+    <li>大問3・大問6(3)：方程式の解が２つ出たあと、問題に合わない解（負の数、道の幅 18 m、−4 秒）をのぞく「解の吟味」を忘れる。</li>
+    <li>大問2(3)：「両辺を x でわる」と、x＝0 の解が消えることに気づかない。</li>
+    <li>大問1(5)：(x−2)(x+5)＝8 を「x−2＝8 または x+5＝8」として解いてしまう。この考え方は右辺が 0 のときしか使えない。</li>
+    <li>大問4(2)・大問6(2)：x が負の数をふくむ変化の割合で、符号や引き算の順序を間違える。</li>
+    <li>大問7：「〜をこえて」「〜まで」の等号の位置と、グラフの ●（ふくむ）・○（ふくまない）の使い分けを間違える。</li>
+  </ul>
+
+  <table class="sum">
+    <tr><th>大問</th><th>配点</th></tr>
+    <tr><td>大問1</td><td>20点</td></tr><tr><td>大問2</td><td>10点</td></tr><tr><td>大問3</td><td>14点</td></tr><tr><td>大問4</td><td>15点</td></tr><tr><td>大問5</td><td>18点</td></tr><tr><td>大問6</td><td>13点</td></tr><tr><td>大問7</td><td>10点</td></tr>
+    <tr><th>合計</th><th>100点</th></tr>
+  </table>
+
+  <p class="end">― 終 ―</p>
+</div>
+
+</body>
+</html>
